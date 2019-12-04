@@ -24,7 +24,7 @@ class TestParameterized_2 {
 //		assertEquals(lowered, arg.toLowerCase());
 //	}
 	
-	@ParameterizedTest
+	@ParameterizedTest(name = "The string {0} is {1} chars in length")
 	@CsvFileSource(resources = "myFile.csv")
 //	@DisplayName("CsvFileSource testLength")
 	void testLength(String arg, int length) {

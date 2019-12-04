@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -79,6 +80,12 @@ class TestSecuence {
 	@RepeatedTest(5) //(name = "Repeated test", value = 5)
 	void testRepited() {
 		System.out.println("in testRepited()");
+	}
+	
+	@Disabled("Because it's just an illustrations")
+	@Test
+	void disabled() {
+		System.out.println("disabled...");
 	}
 
 }
