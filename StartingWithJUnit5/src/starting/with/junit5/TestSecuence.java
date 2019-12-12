@@ -71,6 +71,7 @@ class TestSecuence {
 	
 	@Test
 	@DisplayName("When string is null, throw an NPE")
+	@SuppressWarnings("all")
 	void testException() {
 		String string = null;
 		assertThrows(NullPointerException.class, () -> string.length());
